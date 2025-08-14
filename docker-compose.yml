@@ -17,7 +17,7 @@ services:
     networks:
       - bitcoin-network
     ports:
-      - 0.0.0.0:51234:51234 # Expose ElectrumX to host, access at localhost:51234:t
+      - 0.0.0.0:51234:51234 # Expose ElectrumX to host, access at localhost:51234:s
     environment:
       - ALLOW_ROOT=1
       - COST_SOFT_LIMIT=0 
