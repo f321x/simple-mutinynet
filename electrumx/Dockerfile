@@ -12,7 +12,12 @@ RUN git checkout mutinynet
 RUN git pull upstream master --rebase
 
 RUN pipx install .
-RUN mkdir -p /data
 
-ENTRYPOINT ["/root/.local/bin/electrumx_server"]
+COPY ./generate_ssl_cert.sh .
+RUN chmod +x generate_ssl_cert.sh
+
+COPY ./entry.sh
+RUN chmod +x entry.sh
+
+ENTRYPOINT ["./entry.sh"]
 

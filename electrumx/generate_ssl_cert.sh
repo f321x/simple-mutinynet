@@ -20,4 +20,4 @@ openssl x509 -req -days 1825 -in "server.csr" -signkey "server.key" -out "server
 chmod 600 "server.key"
 chmod 644 "server.crt"
 
-echo "Keys and certificate generated in $CERT_DIR"
+echo "Keys and certificate generated"
