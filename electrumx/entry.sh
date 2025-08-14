@@ -6,4 +6,4 @@ cd /data
 
 ./generate_ssl_cert.sh
 
-exec ./root/.local/bin/electrumx_server
+exec /root/.local/bin/electrumx_server
