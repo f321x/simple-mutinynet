@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./bitcoind/bitcoin_data:/root/.bitcoin
+      - ./bitcoind/bitcoin.conf:/root/.bitcoin/bitcoin.conf
     networks:
       - bitcoin-network
 
