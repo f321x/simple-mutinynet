@@ -27,8 +27,8 @@ services:
       - SERVICES=tcp://:51001,rpc:// 
       - DAEMON_URL=http://bitcoin:bitcoin@bitcoind:38332 # Using container name
       - DB_DIRECTORY=/data
-      - DAEMON_POLL_INTERVAL_BLOCKS=100 
-      - DAEMON_POLL_INTERVAL_MEMPOOL=100 
+      - DAEMON_POLL_INTERVAL_BLOCKS=60
+      - DAEMON_POLL_INTERVAL_MEMPOOL=60
       - PEER_ANNOUNCE=1
     depends_on:
       - bitcoind
