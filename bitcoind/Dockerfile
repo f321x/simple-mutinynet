@@ -16,9 +16,4 @@ RUN BITCOIN_URL="https://github.com/benthecarman/bitcoin/releases/download/pairc
 
 RUN cp /tmp/bin/* /usr/bin/.
 
-WORKDIR /home/mutinynet
-
-COPY ./run.sh .
-RUN chmod +x run.sh
-
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["bitcoind", "--signet"]
