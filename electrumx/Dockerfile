@@ -16,7 +16,7 @@ RUN pipx install .
 COPY ./generate_ssl_cert.sh .
 RUN chmod +x generate_ssl_cert.sh
 
-COPY ./entry.sh
+COPY ./entry.sh .
 RUN chmod +x entry.sh
 
 ENTRYPOINT ["./entry.sh"]
