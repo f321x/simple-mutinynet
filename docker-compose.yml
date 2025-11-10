@@ -19,6 +19,7 @@ services:
     ports:
       - 0.0.0.0:51234:51234 # Expose ElectrumX to host, access at localhost:51234:s
     environment:
+      # - REPORT_SERVICES=ssl://example.com:51234  # externally reachable endpoint for peer discovery, https://electrumx-spesmilo.readthedocs.io/en/latest/environment.html#envvar-REPORT_SERVICES
       - ALLOW_ROOT=1
       - COST_SOFT_LIMIT=0 
       - COST_HARD_LIMIT=0 
