@@ -2,11 +2,9 @@
 
 set -e
 
-mv generate_ssl_cert.sh /data
-
 cd /data
 
-./generate_ssl_cert.sh
+/electrumx-fork/generate_ssl_cert.sh
 
 while true; do
     echo "Starting ElectrumX server..."
